@@ -1,0 +1,18 @@
+﻿@model WebApplication4.Models.FlatModel
+@{
+    ViewData["Title"] = "Add Page";
+}
+
+<div class="text-center">
+    <div style="text-align: left">
+        <form asp-controller="Flat" asp-action="RegisterFlat" method="post">
+            ID:            <input name="id" /><br />
+            Rooms:            <input name="numbersofrooms" /><br />
+            Square:           <input name="amountsquare" /><br />
+            BuildingYear:     <input name="bildyear" /><br />
+            Floor:             <input name="floor" /><br />
+            <button type="submit">Add Flat</button>
+        </form>
+    </div>
+</div>
+

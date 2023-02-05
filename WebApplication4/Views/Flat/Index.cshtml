@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Add Flat Page";
+}
+<div class="text-center">
+    <h2>@ViewData["Result"]</h2>
+
+    <form>
+        <button asp-controller="Flat" asp-action="RegF">Add new Flat</button>
+        <button asp-controller="Flat" asp-action="ViewAll">View all Flats</button>
+        <button asp-controller="Flat" asp-action="DeleteF">Delete Flat</button>
+       @* <button asp-controller="RegisterAppartment" asp-action="ShowApp">Show appartment</button>*@
+    </form>
+</div>

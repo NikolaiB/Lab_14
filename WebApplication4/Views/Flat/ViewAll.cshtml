@@ -1,0 +1,16 @@
+﻿@model List<WebApplication4.Models.FlatModel>
+@{
+    ViewData["Title"] = "Add Page";
+}
+@foreach (var item in Model)
+{
+    <div class="text-left">
+        <p>
+            Id: <strong>@item.Id</strong> <br>
+            BuildingYear: <strong>@item.BildYear</strong> <br>
+            Floor: <strong>@item.Floor</strong> <br>
+            Rooms: <strong>@item.NumbersOfRooms</strong> <br>
+            Square: <strong>@item.AmountSquare</strong> <br>
+        </p>
+    </div>
+}
